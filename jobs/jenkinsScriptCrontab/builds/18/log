@@ -3,3 +3,102 @@ Building on master in workspace /var/lib/jenkins/workspace/jenkinsScriptCrontab
 [jenkinsScriptCrontab] $ /bin/sh -xe /tmp/jenkins7704064240678675815.sh
 + sh jenkinsBackup.sh
 /var/lib/jenkins
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   fingerprints/fe/c5/fbc82900a7fde6890aa3b63e8bed.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/17/build.xml
+#	modified:   jobs/jenkinsScriptCrontab/builds/17/log
+#	new file:   jobs/jenkinsScriptCrontab/builds/18/changelog.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/18/log
+#	modified:   jobs/jenkinsScriptCrontab/builds/lastFailedBuild
+#	modified:   jobs/jenkinsScriptCrontab/builds/lastUnsuccessfulBuild
+#	modified:   jobs/jenkinsScriptCrontab/nextBuildNumber
+#	modified:   logs/slaves/classSlave/slave.log
+#	modified:   logs/slaves/classSlave/slave.log.1
+#	modified:   logs/slaves/classSlave/slave.log.10
+#	modified:   logs/slaves/classSlave/slave.log.2
+#	modified:   logs/slaves/classSlave/slave.log.3
+#	modified:   logs/slaves/classSlave/slave.log.4
+#	renamed:    logs/slaves/slave1/slave.log -> logs/slaves/classSlave/slave.log.5
+#	modified:   logs/slaves/classSlave/slave.log.6
+#	modified:   logs/slaves/classSlave/slave.log.7
+#	modified:   logs/slaves/classSlave/slave.log.8
+#	modified:   logs/slaves/classSlave/slave.log.9
+#	modified:   logs/slaves/slave1/slave.log
+#	modified:   logs/slaves/slave1/slave.log.1
+#	modified:   logs/slaves/slave1/slave.log.10
+#	modified:   logs/slaves/slave1/slave.log.2
+#	modified:   logs/slaves/slave1/slave.log.3
+#	modified:   logs/slaves/slave1/slave.log.4
+#	renamed:    logs/slaves/classSlave/slave.log -> logs/slaves/slave1/slave.log.5
+#	modified:   logs/slaves/slave1/slave.log.6
+#	modified:   logs/slaves/slave1/slave.log.7
+#	modified:   logs/slaves/slave1/slave.log.8
+#	modified:   logs/slaves/slave1/slave.log.9
+#	modified:   logs/slaves/slave2/slave.log
+#	modified:   logs/slaves/slave2/slave.log.1
+#	modified:   logs/slaves/slave2/slave.log.10
+#	modified:   logs/slaves/slave2/slave.log.2
+#	modified:   logs/slaves/slave2/slave.log.3
+#	modified:   logs/slaves/slave2/slave.log.4
+#	renamed:    logs/slaves/classSlave/slave.log.1 -> logs/slaves/slave2/slave.log.5
+#	modified:   logs/slaves/slave2/slave.log.6
+#	modified:   logs/slaves/slave2/slave.log.7
+#	modified:   logs/slaves/slave2/slave.log.8
+#	modified:   logs/slaves/slave2/slave.log.9
+#	modified:   logs/slaves/slave3/slave.log
+#	modified:   logs/slaves/slave3/slave.log.1
+#	modified:   logs/slaves/slave3/slave.log.10
+#	modified:   logs/slaves/slave3/slave.log.2
+#	modified:   logs/slaves/slave3/slave.log.3
+#	modified:   logs/slaves/slave3/slave.log.4
+#	renamed:    logs/slaves/slave1/slave.log.1 -> logs/slaves/slave3/slave.log.5
+#	modified:   logs/slaves/slave3/slave.log.6
+#	modified:   logs/slaves/slave3/slave.log.7
+#	modified:   logs/slaves/slave3/slave.log.8
+#	modified:   logs/slaves/slave3/slave.log.9
+#	modified:   logs/tasks/telemetry collection.log
+#	modified:   logs/tasks/telemetry collection.log.1
+#	modified:   logs/tasks/telemetry collection.log.2
+#	new file:   logs/tasks/telemetry collection.log.3
+#	modified:   queue.xml
+#
+[master 99f2e8f] 2019-02-19_21:51:48 updated
+ Committer: root <root@ip-172-31-41-181.us-east-2.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 57 files changed, 353 insertions(+), 373 deletions(-)
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/17/build.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/18/changelog.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/18/log
+ rewrite logs/slaves/classSlave/slave.log (81%)
+ rewrite logs/slaves/classSlave/slave.log.1 (68%)
+ rename logs/slaves/{slave1/slave.log => classSlave/slave.log.5} (88%)
+ rewrite logs/slaves/slave1/slave.log (81%)
+ rewrite logs/slaves/slave1/slave.log.1 (68%)
+ rename logs/slaves/{classSlave/slave.log => slave1/slave.log.5} (88%)
+ rewrite logs/slaves/slave2/slave.log (81%)
+ rewrite logs/slaves/slave2/slave.log.1 (68%)
+ rename logs/slaves/{classSlave/slave.log.1 => slave2/slave.log.5} (88%)
+ rewrite logs/slaves/slave3/slave.log (81%)
+ rewrite logs/slaves/slave3/slave.log.1 (68%)
+ rename logs/slaves/{slave1/slave.log.1 => slave3/slave.log.5} (88%)
+ create mode 100644 logs/tasks/telemetry collection.log.3
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
