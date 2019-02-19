@@ -1,0 +1,7 @@
+Started by timer
+Building on master in workspace /var/lib/jenkins/workspace/jenkinsScriptCrontab
+[jenkinsScriptCrontab] $ /bin/sh -xe /tmp/jenkins6777924396219976245.sh
++ cd /home/ec2-user/scripts/
+/tmp/jenkins6777924396219976245.sh: line 2: cd: /home/ec2-user/scripts/: Not a directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

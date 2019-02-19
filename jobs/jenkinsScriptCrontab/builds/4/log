@@ -1,0 +1,9 @@
+Started by timer
+Building on master in workspace /var/lib/jenkins/workspace/jenkinsScriptCrontab
+[jenkinsScriptCrontab] $ /bin/sh -xe /tmp/jenkins741588888373793367.sh
++ pwd
+/var/lib/jenkins/workspace/jenkinsScriptCrontab
++ sh /home/ec2-user/scripts/jenkinsBackup.sh
+sh: /home/ec2-user/scripts/jenkinsBackup.sh: Permission denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
