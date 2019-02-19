@@ -3,3 +3,40 @@ Building on master in workspace /var/lib/jenkins/workspace/jenkinsScriptCrontab
 [jenkinsScriptCrontab] $ /bin/sh -xe /tmp/jenkins2798446836757118081.sh
 + sh jenkinsBackup.sh
 /var/lib/jenkins
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   jobs/jenkinsScriptCrontab/builds/18/build.xml
+#	modified:   jobs/jenkinsScriptCrontab/builds/18/log
+#	new file:   jobs/jenkinsScriptCrontab/builds/19/changelog.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/19/log
+#	modified:   jobs/jenkinsScriptCrontab/builds/lastFailedBuild
+#	modified:   jobs/jenkinsScriptCrontab/builds/lastUnsuccessfulBuild
+#	modified:   jobs/jenkinsScriptCrontab/nextBuildNumber
+#	modified:   queue.xml
+#
+[master 3e6e89f] 2019-02-19_21:53:01 updated
+ Committer: root <root@ip-172-31-41-181.us-east-2.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 8 files changed, 136 insertions(+), 4 deletions(-)
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/18/build.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/19/changelog.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/19/log
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

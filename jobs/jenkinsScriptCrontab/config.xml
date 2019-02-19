@@ -14,8 +14,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>
-sh jenkinsBackup.sh</command>
+      <command>sudo cd /home/ec2-user/scripts
+pwd
+#sh jenkinsBackup.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
