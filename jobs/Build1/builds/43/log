@@ -1,0 +1,51 @@
+Started by user [8mha:////4FnuKrCmGXgiu/K6IXhz2KVJYpYMmKbaPU04qO9ae11TAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mA Gagantej
+Building in workspace /var/lib/jenkins/workspace/Build1
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/gagangtr/Project1.git # timeout=10
+Fetching upstream changes from https://github.com/gagangtr/Project1.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/gagangtr/Project1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision a4bb4625aab73b41feed57ca055dbc906b146e66 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a4bb4625aab73b41feed57ca055dbc906b146e66
+Commit message: "Update backup.sh"
+ > git rev-list --no-walk 796f9b39a3761a261932b07d0503ffbd6a0087ba # timeout=10
+[Build1] $ /bin/sh -xe /tmp/jenkins6888100005342972194.sh
++ cd /var/lib/jenkins/workspace/Build1/
++ make ABC.exe
+gcc -o ABC.exe main.o big.o factorial.o palindrome.o revnumber.o pyramid.o engAlpha.o
++ pwd
+/var/lib/jenkins/workspace/Build1
++ sh backup.sh
+/var/lib/jenkins/workspace/Build1
+backup.sh: line 5: cd: jenkinsBackup/: No such file or directory
+mv: cannot stat ‘ABC.exe’: No such file or directory
+config.xml
+hudson.model.UpdateCenter.xml
+hudson.plugins.git.GitTool.xml
+identity.key.enc
+jenkins.CLI.xml
+jenkins.install.InstallUtil.lastExecVersion
+jenkins.install.UpgradeWizard.state
+jenkins.model.JenkinsLocationConfiguration.xml
+jenkins.telemetry.Correlator.xml
+jobs
+logs
+nodeMonitors.xml
+nodes
+plugins
+queue.xml
+queue.xml.bak
+secret.key
+secret.key.not-so-secret
+secrets
+updates
+userContent
+users
+workflow-libs
+workspace
+Finished: SUCCESS

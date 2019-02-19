@@ -1,0 +1,20 @@
+Started on Feb 19, 2019 7:10:42 PM
+Started by event from 192.30.252.39 ⇒ http://18.191.66.28:9090/github-webhook/ on Tue Feb 19 19:10:42 UTC 2019
+Polling SCM changes on master
+Using strategy: Default
+[poll] Last Built Revision: Revision d61b48289f74a44ba6d9084bc35e5cad990f7e63 (refs/remotes/origin/master)
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repositories
+ > git config remote.origin.url https://github.com/gagangtr/integration-git-pr.git # timeout=10
+Fetching upstream changes from https://github.com/gagangtr/integration-git-pr.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/gagangtr/integration-git-pr.git +refs/heads/*:refs/remotes/origin/*
+Polling for changes in
+Seen branch in repository origin/feature1-patch
+Seen branch in repository origin/master
+Seen 2 remote branches
+ > git show-ref --tags -d # timeout=10
+ > git log --full-history --no-abbrev --format=raw -M -m d61b48289f74a44ba6d9084bc35e5cad990f7e63..90b9d7db7e0a3806063667d23002af365bbbe1a4 # timeout=10
+Done. Took 0.38 sec
+Changes found

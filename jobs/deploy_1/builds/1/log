@@ -1,0 +1,13 @@
+Started by user [8mha:////4FnuKrCmGXgiu/K6IXhz2KVJYpYMmKbaPU04qO9ae11TAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mA Gagantej
+Building on master in workspace /var/lib/jenkins/workspace/deploy_1
+[deploy_1] $ /bin/sh -xe /tmp/jenkins4857161299849471388.sh
++ cd /var/lib/jenkins/workspace/buildforwar1/target/
++ sudo cp -p smaple-web-war.war /opt/tomcat/webapps/
++ sudo ls /opt/tomcat/webapps/
+docs
+examples
+host-manager
+manager
+ROOT
+smaple-web-war.war
+Finished: SUCCESS

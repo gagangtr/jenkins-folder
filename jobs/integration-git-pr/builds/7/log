@@ -1,0 +1,19 @@
+Started by GitHub push by gagangtr
+Building on master in workspace /var/lib/jenkins/workspace/integration-git-pr
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/gagangtr/integration-git-pr.git # timeout=10
+Fetching upstream changes from https://github.com/gagangtr/integration-git-pr.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/gagangtr/integration-git-pr.git +refs/heads/*:refs/remotes/origin/*
+Seen branch in repository origin/feature1-patch
+Seen branch in repository origin/master
+Seen 2 remote branches
+ > git show-ref --tags -d # timeout=10
+Checking out Revision 90b9d7db7e0a3806063667d23002af365bbbe1a4 (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 90b9d7db7e0a3806063667d23002af365bbbe1a4
+Commit message: "Merge pull request #8 from gagangtr/feature1-patch"
+First time build. Skipping changelog.
+Finished: SUCCESS

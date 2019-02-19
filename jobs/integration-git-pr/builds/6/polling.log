@@ -1,0 +1,11 @@
+Started on Feb 19, 2019 4:28:36 PM
+Started by event from 192.30.252.39 ⇒ http://18.191.66.28:9090/github-webhook/ on Tue Feb 19 16:28:36 UTC 2019
+Using strategy: Default
+[poll] Last Built Revision: Revision f766a375479e660561600805f008251254c97a0d (refs/remotes/origin/master)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h https://github.com/gagangtr/integration-git-pr.git # timeout=10
+Found 2 remote heads on https://github.com/gagangtr/integration-git-pr.git
+[poll] Latest remote head revision on refs/heads/master is: d61b48289f74a44ba6d9084bc35e5cad990f7e63
+Done. Took 0.23 sec
+Changes found

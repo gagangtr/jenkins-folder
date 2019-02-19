@@ -1,0 +1,497 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.31">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.13">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.3.4.1">
+      <stagesUUID>49e65418-379e-49ba-a30e-0714cb263805</stagesUUID>
+      <stagesList>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStages plugin="pipeline-model-api@1.3.4.1">
+          <stages>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>Build</name>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>echo</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>message</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">Building..</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>sh</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>script</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">
+						set +x					
+						echo -e &quot;
+
+**************************** This is a Build JOB **************************** &quot;
+
+						if [[ -x &quot;ABC.exe&quot; ]]; then
+							echo &quot;STEP 1:	Cleaning existing builds ........&quot;
+								ls *.exe | nl | sed &apos;s/	/) /g&apos; | tr &apos;
+&apos; &apos; &apos; 
+									#rm -f &quot;./ABC.exe&quot; 
+							echo -e &quot;
+
+STEP 2:	Cleaning existing Object files........&quot;
+								ls *.o | nl | sed &apos;s/	/) /g&apos; | tr &apos;
+&apos; &apos; &apos;
+									rm -rf *.o
+						fi   
+							echo -e &quot;
+
+STEP 3:	Initiating Build for below files (using make)........&quot;
+								ls *.c | nl | sed &apos;s/	/) /g&apos; | tr &apos;
+&apos; &apos; &apos;
+							echo -e &quot;
+&quot;    
+								make
+
+						#dt=$(date +%Y-%m-%d_%H:%M:%S)
+
+						if [[ -x &quot;./ABC.exe&quot; ]]; then  
+							echo -e &quot;
+STEP 4:	Build Successful&quot;
+							echo &quot;       	BUILD_FILE: $(pwd)/ABC.exe&quot;
+							ls $(pwd)
+						else
+							echo -e &quot;**************** ERROR *********************
+&quot;
+							echo &quot;Build failure - No executable file generated&quot;
+							echo -e &quot;********************************************
+&quot;
+							exit 1
+						fi    
+
+						echo -e &quot;
+************************************************************************** &quot;
+				</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+              <parallelContent/>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>deploy</name>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>echo</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>message</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">Deploying to TEST environment..</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>sh</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>script</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">
+					set +x
+					file=&quot;$(pwd)/ABC.exe&quot;
+					pwd;
+					
+				echo -e &quot;
+
+**************************** This is a Deploy JOB $file **************************** &quot;
+				if [[ -f &quot;$file&quot; ]]; then 
+				 dt=$(date +%Y-%m-%d_%H:%M)
+				 sudo cp -p $(pwd)/ABC.exe /home/ec2-user/jenkinsBackup/ABC_$dt.exe
+				 
+				if [ $? -eq 0 ]; then
+					file1=&quot;/home/ec2-user/jenkinsBackup/ABC_$dt.exe&quot;
+				  if [[ -x &quot;$file1&quot; ]]; then  
+				  	  echo -e &quot;
+STEP 2:	Deployment Successful - Build pushed to artifactory&quot;
+					  echo &quot;       	ARTIFACTORY_PATH: /home/ec2-user/jenkinsBackup/$file1&quot;
+				  fi
+				else  
+					  echo -e &quot;**************** ERROR *********************
+&quot;
+					  echo &quot;Deployment failure - ABC.exe cannot be executed &quot;
+					  echo -e &quot;********************************************
+&quot;
+					  exit 1
+				fi
+				else 
+					 echo -e &quot;**************** ERROR *********************
+&quot;
+					  echo &quot;Build - ABC.exe notfound $file &quot;
+					  echo -e &quot;********************************************
+&quot;
+					  exit 1
+				fi
+				</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+              <parallelContent/>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>test</name>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>echo</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>message</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">Testing....</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>sh</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>script</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">
+				set +x
+					dt=$(date +%Y-%m-%d_%H:%M)
+					file=&quot;/home/ec2-user/jenkinsBackup/ABC_$dt.exe&quot;
+					
+					
+				echo -e &quot;
+
+**************************** This is a Deploy JOB for $file**************************** &quot;
+				if [[ -f &quot;$file&quot; ]]; then 
+				count=1
+				
+				for i in {1..10}
+				do
+					num1=$((1 + RANDOM % 100))
+					num2=$((1 + RANDOM % 1000))
+					num3=$((1 + RANDOM % 2000))
+					
+						echo -e &quot;
+-------------------------- TEST_CASE ($count) --------------------------&quot;
+						$file -v -i &lt;&lt;&lt;&quot;$num1 $num2 num3&quot;
+					
+					if [ $? -eq 34 ]; then
+						echo -e &quot;
+      RESULT -&gt; TEST_CASE (${count}): SUCCESS&quot; 
+					else  
+						echo -e &quot;
+      RESULT -&gt; TEST_CASE (${count}): FAILED&quot;
+						exit 1
+					fi
+
+					echo &quot;-------------------------------------------------------------------&quot;
+					((count++))
+				done
+				else 
+					 echo -e &quot;**************** ERROR *********************
+&quot;
+					  echo &quot;Build - ABC.exe notfound $file &quot;
+					  echo -e &quot;********************************************
+&quot;
+					  exit 1
+				fi
+				</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+              <parallelContent/>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+          </stages>
+          <uuid>49e65418-379e-49ba-a30e-0714cb263805</uuid>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStages>
+      </stagesList>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.9.3">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.6">
+              <sha1>438bee9461d7638ea57afb995a1feaaa2d51e5ed</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>15</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/gagangtr/pipelineExample.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.9.3">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/lib/jenkins/workspace/pipelineExample</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.7">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/gagangtr/pipelineExample.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+  </actions>
+  <queueId>132</queueId>
+  <timestamp>1550497207235</timestamp>
+  <startTime>1550497207237</startTime>
+  <result>FAILURE</result>
+  <duration>4370</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>pipeline {
+agent any
+stages {
+        stage(&apos;Build&apos;) {
+            steps {
+                echo &apos;Building..&apos;
+				sh &apos;&apos;&apos;
+						set +x					
+						echo -e &quot;\n\n**************************** This is a Build JOB **************************** &quot;
+
+						if [[ -x &quot;ABC.exe&quot; ]]; then
+							echo &quot;STEP 1:	Cleaning existing builds ........&quot;
+								ls *.exe | nl | sed &apos;s/	/) /g&apos; | tr &apos;\n&apos; &apos; &apos; 
+									#rm -f &quot;./ABC.exe&quot; 
+							echo -e &quot;\n\nSTEP 2:	Cleaning existing Object files........&quot;
+								ls *.o | nl | sed &apos;s/	/) /g&apos; | tr &apos;\n&apos; &apos; &apos;
+									rm -rf *.o
+						fi   
+							echo -e &quot;\n\nSTEP 3:	Initiating Build for below files (using make)........&quot;
+								ls *.c | nl | sed &apos;s/	/) /g&apos; | tr &apos;\n&apos; &apos; &apos;
+							echo -e &quot;\n&quot;    
+								make
+
+						#dt=$(date +%Y-%m-%d_%H:%M:%S)
+
+						if [[ -x &quot;./ABC.exe&quot; ]]; then  
+							echo -e &quot;\nSTEP 4:	Build Successful&quot;
+							echo &quot;       	BUILD_FILE: $(pwd)/ABC.exe&quot;
+							ls $(pwd)
+						else
+							echo -e &quot;**************** ERROR *********************\n&quot;
+							echo &quot;Build failure - No executable file generated&quot;
+							echo -e &quot;********************************************\n&quot;
+							exit 1
+						fi    
+
+						echo -e &quot;\n************************************************************************** &quot;
+				&apos;&apos;&apos;
+				
+            }
+        }
+        stage(&apos;deploy&apos;) {
+            steps {
+                echo &apos;Deploying to TEST environment..&apos;
+				sh &apos;&apos;&apos;
+					set +x
+					file=&quot;$(pwd)/ABC.exe&quot;
+					pwd;
+					
+				echo -e &quot;\n\n**************************** This is a Deploy JOB $file **************************** &quot;
+				if [[ -f &quot;$file&quot; ]]; then 
+				 dt=$(date +%Y-%m-%d_%H:%M)
+				 sudo cp -p $(pwd)/ABC.exe /home/ec2-user/jenkinsBackup/ABC_$dt.exe
+				 
+				if [ $? -eq 0 ]; then
+					file1=&quot;/home/ec2-user/jenkinsBackup/ABC_$dt.exe&quot;
+				  if [[ -x &quot;$file1&quot; ]]; then  
+				  	  echo -e &quot;\nSTEP 2:	Deployment Successful - Build pushed to artifactory&quot;
+					  echo &quot;       	ARTIFACTORY_PATH: /home/ec2-user/jenkinsBackup/$file1&quot;
+				  fi
+				else  
+					  echo -e &quot;**************** ERROR *********************\n&quot;
+					  echo &quot;Deployment failure - ABC.exe cannot be executed &quot;
+					  echo -e &quot;********************************************\n&quot;
+					  exit 1
+				fi
+				else 
+					 echo -e &quot;**************** ERROR *********************\n&quot;
+					  echo &quot;Build - ABC.exe notfound $file &quot;
+					  echo -e &quot;********************************************\n&quot;
+					  exit 1
+				fi
+				&apos;&apos;&apos;
+            }
+        }
+        stage(&apos;test&apos;) {
+            steps {
+                echo &apos;Testing....&apos;
+				sh &apos;&apos;&apos;
+				set +x
+					dt=$(date +%Y-%m-%d_%H:%M)
+					file=&quot;/home/ec2-user/jenkinsBackup/ABC_$dt.exe&quot;
+					
+					
+				echo -e &quot;\n\n**************************** This is a Deploy JOB for $file**************************** &quot;
+				if [[ -f &quot;$file&quot; ]]; then 
+				count=1
+				
+				for i in {1..10}
+				do
+					num1=$((1 + RANDOM % 100))
+					num2=$((1 + RANDOM % 1000))
+					num3=$((1 + RANDOM % 2000))
+					
+						echo -e &quot;\n-------------------------- TEST_CASE ($count) --------------------------&quot;
+						$file -v -i &lt;&lt;&lt;&quot;$num1 $num2 num3&quot;
+					
+					if [ $? -eq 34 ]; then
+						echo -e &quot;\n      RESULT -&gt; TEST_CASE (${count}): SUCCESS&quot; 
+					else  
+						echo -e &quot;\n      RESULT -&gt; TEST_CASE (${count}): FAILED&quot;
+						exit 1
+					fi
+
+					echo &quot;-------------------------------------------------------------------&quot;
+					((count++))
+				done
+				else 
+					 echo -e &quot;**************** ERROR *********************\n&quot;
+					  echo &quot;Build - ABC.exe notfound $file &quot;
+					  echo -e &quot;********************************************\n&quot;
+					  exit 1
+				fi
+				&apos;&apos;&apos;
+					}
+				}
+    }
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>372535926</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>215883102</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>862643193</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>48445996</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>50316321</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>34</iota>
+    <head>1:34</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.3">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/gagangtr/pipelineExample.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>/var/lib/jenkins/workspace/pipelineExample</workspace>
+      <changelogFile>/var/lib/jenkins/jobs/pipelineExample/builds/15/changelog0.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

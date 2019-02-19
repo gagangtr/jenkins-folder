@@ -1,0 +1,26 @@
+Started by timer
+Building remotely on [8mha:////4AD4GDJTjqYgdETaalaRMsBNHzZt5BpJMXsIS9gRogWTAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUQwA49mDyxQAAAA==[0mslave1 (gagan) in workspace /home/ec2-user/jenkins/workspace/buildforslave
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/gagangtr/Project1.git
+ > git init /home/ec2-user/jenkins/workspace/buildforslave # timeout=10
+Fetching upstream changes from https://github.com/gagangtr/Project1.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/gagangtr/Project1.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/gagangtr/Project1.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/gagangtr/Project1.git # timeout=10
+Fetching upstream changes from https://github.com/gagangtr/Project1.git
+ > git fetch --tags --progress https://github.com/gagangtr/Project1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision ff5de7afde039c8e5b2f454c94a134e323496fc4 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ff5de7afde039c8e5b2f454c94a134e323496fc4
+Commit message: "Update backup.sh"
+First time build. Skipping changelog.
+[buildforslave] $ /bin/sh -xe /tmp/jenkins479713804573940534.sh
++ cd /var/lib/jenkins/workspace/buildforslave
+/tmp/jenkins479713804573940534.sh: line 2: cd: /var/lib/jenkins/workspace/buildforslave: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

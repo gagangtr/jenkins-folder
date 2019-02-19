@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-02-15 14:11:00.76 UTC</timestamp>
+  <original>
+    <name>buildforwar1/gagan:smaple-web-war</name>
+    <number>9</number>
+  </original>
+  <md5sum>94ea0067330756d1f8a11a4ad603d35a</md5sum>
+  <fileName>gagan:smaple-web-war.war</fileName>
+  <usages>
+    <entry>
+      <string>buildforwar1/gagan:smaple-web-war</string>
+      <ranges>9</ranges>
+    </entry>
+    <entry>
+      <string>buildforwar1</string>
+      <ranges>9</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

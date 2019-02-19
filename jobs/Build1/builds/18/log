@@ -1,0 +1,37 @@
+Started by user [8mha:////4FnuKrCmGXgiu/K6IXhz2KVJYpYMmKbaPU04qO9ae11TAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mA Gagantej
+Building in workspace /var/lib/jenkins/workspace/Build1
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/gagangtr/Project1.git # timeout=10
+Fetching upstream changes from https://github.com/gagangtr/Project1.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/gagangtr/Project1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 4614e3d3cf26dd0edb99cd940c364f7c6274439d (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4614e3d3cf26dd0edb99cd940c364f7c6274439d
+Commit message: "Delete ABC.exe"
+ > git rev-list --no-walk 4614e3d3cf26dd0edb99cd940c364f7c6274439d # timeout=10
+[Build1] $ /bin/sh -xe /tmp/jenkins1406321673103665024.sh
++ cd /var/lib/jenkins/workspace/Build1/
++ make ABC.exe
+make: `ABC.exe' is up to date.
++ pwd
+/var/lib/jenkins/workspace/Build1
++ cd /home/jenkinsbackup
++ pwd
+/home/jenkinsbackup
++ sudo mv /var/lib/jenkins/workspace/Build1/ABC.exe .
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: no tty present and no askpass program specified
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-02-15 12:53:46.88 UTC</timestamp>
+  <md5sum>27bf6d5323a86a6115b607ce82512d6c</md5sum>
+  <fileName>org.apache.httpcomponents:httpcore-4.4.1.jar</fileName>
+  <usages>
+    <entry>
+      <string>buildforwar1/dev.outlook.com:java-calendar-demo</string>
+      <ranges>2</ranges>
+    </entry>
+    <entry>
+      <string>buildforwar1</string>
+      <ranges>2</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

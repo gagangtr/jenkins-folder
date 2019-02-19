@@ -1,0 +1,45 @@
+Started by user [8mha:////4FnuKrCmGXgiu/K6IXhz2KVJYpYMmKbaPU04qO9ae11TAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mA Gagantej
+Building in workspace /var/lib/jenkins/workspace/Build1
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/gagangtr/Project1.git # timeout=10
+Fetching upstream changes from https://github.com/gagangtr/Project1.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/gagangtr/Project1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9118faf0c5eab0de1de1e8953b0fca2e3cc60638 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9118faf0c5eab0de1de1e8953b0fca2e3cc60638
+Commit message: "Update backup.sh"
+ > git rev-list --no-walk 85af7606d605d2027b716d60c823f9d7b6efaeff # timeout=10
+[Build1] $ /bin/sh -xe /tmp/jenkins967759499444935864.sh
++ cd /var/lib/jenkins/workspace/Build1/
++ make ABC.exe
+make: `ABC.exe' is up to date.
++ pwd
+/var/lib/jenkins/workspace/Build1
++ sh backup.sh
+/var/lib/jenkins/workspace/Build1
+cp: failed to access ‘/home/ec2-user/jenkinsBackup/’: Permission denied
+ABC.exe
+backup.sh
+big.c
+big.o
+engAlpha.c
+engAlpha.o
+factorial.c
+factorial.o
+main.c
+main.o
+makefile
+palindrome.c
+palindrome.o
+pyramid.c
+pyramid.o
+README.md
+revnumber.c
+revnumber.o
+revstring.c
+Finished: SUCCESS

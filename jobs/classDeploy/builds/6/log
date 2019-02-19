@@ -1,0 +1,12 @@
+Started by user [8mha:////4FnuKrCmGXgiu/K6IXhz2KVJYpYMmKbaPU04qO9ae11TAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mA Gagantej
+Building remotely on [8mha:////4PRgmvdjh6tf9SPjGEm2oO2S5YcjCqbJNn9pUCUjxcIFAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQi/eScxOLi4JzEslQAEpedBckAAAA=[0mclassSlave (gagan) in workspace /home/ec2-user/classSlave/workspace/classDeploy
+[classDeploy] $ /bin/sh -xe /tmp/jenkins4961034715876871120.sh
++ sudo systemctl stop tomcat
++ cd /usr/share/tomcat/webapps/
++ pwd
+/usr/share/tomcat/webapps
++ sudo scp -i -o /home/ec2-user/.ssh/RedhatFeb19.pem ec2-user@18.218.100.65:/var/lib/jenkins/workspace/classBuild/target/smaple-web-war.war /usr/share/tomcat/webapps/
+Warning: Identity file -o not accessible: No such file or directory.
+Host key verification failed.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

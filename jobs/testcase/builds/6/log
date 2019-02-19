@@ -1,0 +1,10 @@
+Started by upstream project "[8mha:////4FZrbzFkZ1oPWlaE566Z0LZOIFgaTmk6yRDUpI1+2y41AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/az8JP2U1IKc/Mp4Q30AdFy3rMMAAAA=[0mdeploy_1" build number [8mha:////4MuSBKp1t0IOacJsTG6Tg2mP6Dq2jX8y6txKgb2Q5YBrAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBn79rPwk/ZTUgpz8ynhDfVMAmyVeo8QAAAA=[0m5
+originally caused by:
+ Started by upstream project "[8mha:////4JT8HQrdtswk71BH1Wua+jnGtehG4EHah3u+xEEXquEXAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6WflJ+kmlmTkpaflF5YlFhvoAzmpWtccAAAA=[0mbuildforwar1" build number [8mha:////4LqadMd294aqULTHFO5ne1feTIOZTuM7Bld7YLAjXqQhAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYR/az8JP2k0syclLT8ovLEIkN9Q0MAj7lJuskAAAA=[0m11
+ originally caused by:
+  Started by user [8mha:////4FnuKrCmGXgiu/K6IXhz2KVJYpYMmKbaPU04qO9ae11TAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mA Gagantej
+Building remotely on [8mha:////4PoxP1AxePgyM7XhRqitoCkJfgwqFQmyem8jo+X0mO9MAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUYwAUl24cxQAAAA==[0mslave3 (gagan) in workspace /home/ec2-user/jenkins_slave3/workspace/testcase
+[testcase] $ /bin/sh -xe /tmp/jenkins938045469263080090.sh
++ echo 'Test cases are success'
+Test cases are success
+Finished: SUCCESS

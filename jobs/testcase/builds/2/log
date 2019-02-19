@@ -1,0 +1,9 @@
+Started by user [8mha:////4FnuKrCmGXgiu/K6IXhz2KVJYpYMmKbaPU04qO9ae11TAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mA Gagantej
+Building remotely on [8mha:////4PoxP1AxePgyM7XhRqitoCkJfgwqFQmyem8jo+X0mO9MAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUYwAUl24cxQAAAA==[0mslave3 (gagan) in workspace /home/ec2-user/jenkins_slave3/workspace/testcase
+[testcase] $ /bin/sh -xe /tmp/jenkins8943713694335276579.sh
++ echo 'Test cases are success'
+Test cases are success
++ exit 1
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: alapatigagan@gmail.com
+Finished: FAILURE

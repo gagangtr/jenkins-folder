@@ -1,0 +1,25 @@
+Started by user [8mha:////4FnuKrCmGXgiu/K6IXhz2KVJYpYMmKbaPU04qO9ae11TAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mA Gagantej
+Building on master in workspace /var/lib/jenkins/workspace/ciwithpr
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/gagangtr/integration-git-pr.git
+ > git init /var/lib/jenkins/workspace/ciwithpr # timeout=10
+Fetching upstream changes from https://github.com/gagangtr/integration-git-pr.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/gagangtr/integration-git-pr.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/gagangtr/integration-git-pr.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/gagangtr/integration-git-pr.git # timeout=10
+Fetching upstream changes from https://github.com/gagangtr/integration-git-pr.git
+ > git fetch --tags --progress https://github.com/gagangtr/integration-git-pr.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c604b2e71d37ef0ecaf36c83c482cc9af7ba19e3 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c604b2e71d37ef0ecaf36c83c482cc9af7ba19e3
+Commit message: "Merge pull request #2 from gagangtr/feature1-patch"
+ > git rev-list --no-walk ed3ee653df0bd9db73300737f967901be7c8122d # timeout=10
+Finished: SUCCESS

@@ -1,0 +1,14 @@
+Started by upstream project "[8mha:////4HKGosFPJQMH3a5AEh+qx1z59mMXG2hGH+MY5cWCONS3AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JP3knMTiYqfSzJwUfQCh8nWsxQAAAA==[0mclassBuild" build number [8mha:////4JugjJdYobRYtjq2kRsx7IjhQxrq6ybFDUr4ZkHpXPJEAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBkH9rPwk/eScxOJip9LMnBR9EwDAwHXjxgAAAA==[0m4
+originally caused by:
+ Started by user [8mha:////4FnuKrCmGXgiu/K6IXhz2KVJYpYMmKbaPU04qO9ae11TAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mA Gagantej
+Building remotely on [8mha:////4PRgmvdjh6tf9SPjGEm2oO2S5YcjCqbJNn9pUCUjxcIFAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQi/eScxOLi4JzEslQAEpedBckAAAA=[0mclassSlave (gagan) in workspace /home/ec2-user/classSlave/workspace/classDeploy
+[classDeploy] $ /bin/sh -xe /tmp/jenkins2344853562857899299.sh
++ sudo systemctl stop tomcat
++ cd /usr/share/tomcat/webapps/
++ pwd
+/usr/share/tomcat/webapps
++ sudo scp -i /home/ec2-user/.ssh/RedhatFeb19.pem ec2-user@18.218.100.65:/var/lib/jenkins/workspace/classBuild/target/smaple-web-war.war /usr/share/tomcat/webapps/
+Warning: Identity file /home/ec2-user/.ssh/RedhatFeb19.pem not accessible: No such file or directory.
+Host key verification failed.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

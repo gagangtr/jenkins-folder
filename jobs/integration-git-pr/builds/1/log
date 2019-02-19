@@ -1,0 +1,22 @@
+Started by GitHub push by gagangtr
+Building on master in workspace /var/lib/jenkins/workspace/ciwithpr
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/gagangtr/integration-git-pr.git
+ > git init /var/lib/jenkins/workspace/ciwithpr # timeout=10
+Fetching upstream changes from https://github.com/gagangtr/integration-git-pr.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/gagangtr/integration-git-pr.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/gagangtr/integration-git-pr.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/gagangtr/integration-git-pr.git # timeout=10
+Fetching upstream changes from https://github.com/gagangtr/integration-git-pr.git
+ > git fetch --tags --progress https://github.com/gagangtr/integration-git-pr.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision ed3ee653df0bd9db73300737f967901be7c8122d (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ed3ee653df0bd9db73300737f967901be7c8122d
+Commit message: "Initial commit"
+First time build. Skipping changelog.
+Finished: SUCCESS

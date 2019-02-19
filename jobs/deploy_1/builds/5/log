@@ -1,0 +1,18 @@
+Started by upstream project "[8mha:////4JT8HQrdtswk71BH1Wua+jnGtehG4EHah3u+xEEXquEXAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6WflJ+kmlmTkpaflF5YlFhvoAzmpWtccAAAA=[0mbuildforwar1" build number [8mha:////4LqadMd294aqULTHFO5ne1feTIOZTuM7Bld7YLAjXqQhAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYR/az8JP2k0syclLT8ovLEIkN9Q0MAj7lJuskAAAA=[0m11
+originally caused by:
+ Started by user [8mha:////4FnuKrCmGXgiu/K6IXhz2KVJYpYMmKbaPU04qO9ae11TAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mA Gagantej
+Building remotely on [8mha:////4AnkOr6CcekQ3zPJ0UAjXtGqXQmF/WxZ87w1zuTkObzdAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUIwCCp2lrxQAAAA==[0mslave2 (gagan) in workspace /home/ec2-user/jenkins_slave2/workspace/deploy_1
+[deploy_1] $ /bin/sh -xe /tmp/jenkins4574500648033436736.sh
++ cd /home/ec2-user/jenkins/workspace/buildforwar1/target/
++ sudo cp -p smaple-web-war.war /usr/share/tomcat/webapps/
++ sudo ls /usr/share/tomcat/webapps
+examples
+host-manager
+manager
+RedhatFeb19.pem
+ROOT
+sample
+smaple-web-war.war
++ sudo systemctl restart tomcat
+Triggering a new build of [8mha:////4JZ4LpU0xK11/mD3cDhqpLToVyCHEDqwyEuGL4+67+UQAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/az8JP2S1OKS5MTiVH0AyzHHYcMAAAA=[0mtestcase
+Finished: SUCCESS

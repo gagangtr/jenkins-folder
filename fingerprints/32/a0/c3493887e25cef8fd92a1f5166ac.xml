@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-02-17 06:19:54.782 UTC</timestamp>
+  <original>
+    <name>classBuild/gagan:smaple-web-war</name>
+    <number>1</number>
+  </original>
+  <md5sum>32a0c3493887e25cef8fd92a1f5166ac</md5sum>
+  <fileName>gagan:smaple-web-war.war</fileName>
+  <usages>
+    <entry>
+      <string>classBuild/gagan:smaple-web-war</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>classBuild</string>
+      <ranges>1</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

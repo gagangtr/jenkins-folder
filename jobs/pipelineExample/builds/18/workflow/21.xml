@@ -1,0 +1,60 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.2">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.63">
+    <parentIds>
+      <string>20</string>
+    </parentIds>
+    <id>21</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.63">
+      <arguments>
+        <entry>
+          <string>script</string>
+          <string>
+					set +x
+					file=&quot;$(pwd)/ABC.exe&quot;
+					pwd;
+					
+				echo -e &quot;
+
+**************************** This is a Deploy JOB $file **************************** &quot;
+				if [[ -f &quot;$file&quot; ]]; then 
+				 dt=$(date +%Y-%m-%d_%H:%M)
+				 sudo cp -p $(pwd)/ABC.exe /home/ec2-user/jenkinsBackup/ABC_$dt.exe
+				 
+				if [ $? -eq 0 ]; then
+					file1=&quot;/home/ec2-user/jenkinsBackup/ABC_$dt.exe&quot;
+				  if [[ -x &quot;$file1&quot; ]]; then  
+				  	  echo -e &quot;
+STEP 2:	Deployment Successful - Build pushed to artifactory&quot;
+					  echo &quot;       	ARTIFACTORY_PATH: /home/ec2-user/jenkinsBackup/$file1&quot;
+				  fi
+				else  
+					  echo -e &quot;**************** ERROR *********************
+&quot;
+					  echo &quot;Deployment failure - ABC.exe cannot be executed &quot;
+					  echo -e &quot;********************************************
+&quot;
+					  exit 1
+				fi
+				else 
+					 echo -e &quot;**************** ERROR *********************
+&quot;
+					  echo &quot;Build - ABC.exe notfound $file &quot;
+					  echo -e &quot;********************************************
+&quot;
+					  exit 1
+				fi
+				</string>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.33">
+      <startTime>1550498026811</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

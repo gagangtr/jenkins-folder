@@ -1,0 +1,25 @@
+Started by user [8mha:////4FnuKrCmGXgiu/K6IXhz2KVJYpYMmKbaPU04qO9ae11TAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mA Gagantej
+Building in workspace /var/lib/jenkins/workspace/Build1
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/gagangtr/Project1.git # timeout=10
+Fetching upstream changes from https://github.com/gagangtr/Project1.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/gagangtr/Project1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3e0c78248b5200c3419b05c5d8d81a36ee95c981 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3e0c78248b5200c3419b05c5d8d81a36ee95c981
+Commit message: "Update backup.sh"
+ > git rev-list --no-walk 4e64ee745230eb9d1fa8dbe47f50b979a29ef55e # timeout=10
+[Build1] $ /bin/sh -xe /tmp/jenkins8917334893524964754.sh
++ cd /var/lib/jenkins/workspace/Build1/
++ make ABC.exe
+make: `ABC.exe' is up to date.
++ sh backup.sh
+/var/lib/jenkins/workspace/Build1
+mv: cannot move ‘/home/ec2-user/jenkinsBackup/ABC.exe’ to ‘/home/ec2-user/jenkinsBackup/ABC_13/02/2019_14:16:07.exe’: No such file or directory
+ABC.exe
+Finished: SUCCESS

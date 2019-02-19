@@ -1,0 +1,28 @@
+Started by user [8mha:////4FnuKrCmGXgiu/K6IXhz2KVJYpYMmKbaPU04qO9ae11TAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mA Gagantej
+Building in workspace /var/lib/jenkins/workspace/Build1
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/gagangtr/Project1.git # timeout=10
+Fetching upstream changes from https://github.com/gagangtr/Project1.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/gagangtr/Project1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 427542a9dc8c98ab819472b3e8efeede103eec4f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 427542a9dc8c98ab819472b3e8efeede103eec4f
+Commit message: "Update backup.sh"
+ > git rev-list --no-walk a4bb4625aab73b41feed57ca055dbc906b146e66 # timeout=10
+[Build1] $ /bin/sh -xe /tmp/jenkins939612455310464988.sh
++ cd /var/lib/jenkins/workspace/Build1/
++ make ABC.exe
+make: `ABC.exe' is up to date.
++ pwd
+/var/lib/jenkins/workspace/Build1
++ sh backup.sh
+/var/lib/jenkins/workspace/Build1
+mv: cannot move ‘/home/ec2-user/jenkinsBackup/ABC.exe’ to ‘/home/ec2-user/jenkinsBackup/ABC_13/02/2019_14:06:56.exe’: No such file or directory
+ls: cannot access /home/ec2-user/jenkinsBackup/: Permission denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

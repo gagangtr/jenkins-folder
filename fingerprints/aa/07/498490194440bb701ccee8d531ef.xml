@@ -1,0 +1,29 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-02-15 13:01:25.758 UTC</timestamp>
+  <original>
+    <name>buildforwar1/gagan:smaple-web-war</name>
+    <number>3</number>
+  </original>
+  <md5sum>aa07498490194440bb701ccee8d531ef</md5sum>
+  <fileName>gagan:smaple-web-war:pom.xml</fileName>
+  <usages>
+    <entry>
+      <string>buildforwar1/gagan:smaple-web-war</string>
+      <ranges>3,7-11</ranges>
+    </entry>
+    <entry>
+      <string>classBuild/gagan:smaple-web-war</string>
+      <ranges>1-4</ranges>
+    </entry>
+    <entry>
+      <string>buildforwar1</string>
+      <ranges>3,7-11</ranges>
+    </entry>
+    <entry>
+      <string>classBuild</string>
+      <ranges>1-4</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>
