@@ -1,17 +1,27 @@
 SSHLauncher{host='18.217.57.0', port=22, credentialsId='8786d35e-7f51-4c47-9904-63ff845271a0', jvmOptions='', javaPath='', prefixStartSlaveCmd='', suffixStartSlaveCmd='', launchTimeoutSeconds=210, maxNumRetries=10, retryWaitTime=15, sshHostKeyVerificationStrategy=hudson.plugins.sshslaves.verifiers.ManuallyTrustedKeyVerificationStrategy, tcpNoDelay=true, trackCredentials=true}
-[02/19/19 18:34:44] [SSH] Opening SSH connection to 18.217.57.0:22.
-Connection timed out (Connection timed out)
-SSH Connection failed with IOException: "Connection timed out (Connection timed out)", retrying in 15 seconds.  There are 10 more retries left.
-ERROR: null
-java.util.concurrent.CancellationException
-	at java.util.concurrent.FutureTask.report(FutureTask.java:121)
-	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
-	at hudson.plugins.sshslaves.SSHLauncher.launch(SSHLauncher.java:902)
-	at hudson.slaves.SlaveComputer$1.call(SlaveComputer.java:294)
-	at jenkins.util.ContextResettingExecutorService$2.call(ContextResettingExecutorService.java:46)
-	at jenkins.security.ImpersonatingExecutorService$2.call(ImpersonatingExecutorService.java:71)
+[02/19/19 19:26:44] [SSH] Opening SSH connection to 18.217.57.0:22.
+Connection refused (Connection refused)
+SSH Connection failed with IOException: "Connection refused (Connection refused)", retrying in 15 seconds.  There are 10 more retries left.
+[02/19/19 19:26:59] [SSH] WARNING: The SSH key for this host is not currently trusted. Connections will be denied until this new key is authorised.
+Key exchange was not finished, connection is closed.
+java.io.IOException: There was a problem while connecting to 18.217.57.0:22
+	at com.trilead.ssh2.Connection.connect(Connection.java:834)
+	at hudson.plugins.sshslaves.SSHLauncher.openConnection(SSHLauncher.java:1175)
+	at hudson.plugins.sshslaves.SSHLauncher$2.call(SSHLauncher.java:846)
+	at hudson.plugins.sshslaves.SSHLauncher$2.call(SSHLauncher.java:833)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-[02/19/19 18:38:14] Launch failed - cleaning up connection
+Caused by: java.io.IOException: Key exchange was not finished, connection is closed.
+	at com.trilead.ssh2.transport.KexManager.getOrWaitForConnectionInfo(KexManager.java:95)
+	at com.trilead.ssh2.transport.TransportManager.getConnectionInfo(TransportManager.java:237)
+	at com.trilead.ssh2.Connection.connect(Connection.java:786)
+	... 7 more
+Caused by: java.io.IOException: The server hostkey was not accepted by the verifier callback
+	at com.trilead.ssh2.transport.KexManager.handleMessage(KexManager.java:548)
+	at com.trilead.ssh2.transport.TransportManager.receiveLoop(TransportManager.java:790)
+	at com.trilead.ssh2.transport.TransportManager$1.run(TransportManager.java:502)
+	... 1 more
+[02/19/19 19:26:59] Launch failed - cleaning up connection
+[02/19/19 19:26:59] [SSH] Connection closed.
