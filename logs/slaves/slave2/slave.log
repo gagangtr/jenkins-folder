@@ -1,6 +1,6 @@
 SSHLauncher{host='18.217.57.0', port=22, credentialsId='8786d35e-7f51-4c47-9904-63ff845271a0', jvmOptions='', javaPath='', prefixStartSlaveCmd='', suffixStartSlaveCmd='', launchTimeoutSeconds=210, maxNumRetries=10, retryWaitTime=15, sshHostKeyVerificationStrategy=hudson.plugins.sshslaves.verifiers.ManuallyTrustedKeyVerificationStrategy, tcpNoDelay=true, trackCredentials=true}
-[02/19/19 19:50:44] [SSH] Opening SSH connection to 18.217.57.0:22.
-[02/19/19 19:50:45] [SSH] WARNING: The SSH key for this host is not currently trusted. Connections will be denied until this new key is authorised.
+[02/19/19 20:13:44] [SSH] Opening SSH connection to 18.217.57.0:22.
+[02/19/19 20:13:45] [SSH] WARNING: The SSH key for this host is not currently trusted. Connections will be denied until this new key is authorised.
 Key exchange was not finished, connection is closed.
 java.io.IOException: There was a problem while connecting to 18.217.57.0:22
 	at com.trilead.ssh2.Connection.connect(Connection.java:834)
@@ -21,5 +21,5 @@ Caused by: java.io.IOException: The server hostkey was not accepted by the verif
 	at com.trilead.ssh2.transport.TransportManager.receiveLoop(TransportManager.java:790)
 	at com.trilead.ssh2.transport.TransportManager$1.run(TransportManager.java:502)
 	... 1 more
-[02/19/19 19:50:45] Launch failed - cleaning up connection
-[02/19/19 19:50:45] [SSH] Connection closed.
+[02/19/19 20:13:45] Launch failed - cleaning up connection
+[02/19/19 20:13:45] [SSH] Connection closed.

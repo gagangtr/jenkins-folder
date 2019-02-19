@@ -6,24 +6,24 @@
   <usages/>
   <facets>
     <com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet plugin="credentials@2.1.18">
-      <timestamp>1550605845226</timestamp>
-      <nodeName>slave2</nodeName>
-      <timestamp0>1550604419810</timestamp0>
-    </com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet>
-    <com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet plugin="credentials@2.1.18">
-      <timestamp>1550605845307</timestamp>
+      <timestamp>1550607225306</timestamp>
       <nodeName>slave3</nodeName>
-      <timestamp0>1550604419788</timestamp0>
+      <timestamp0>1550605845307</timestamp0>
     </com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet>
     <com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet plugin="credentials@2.1.18">
-      <timestamp>1550605845452</timestamp>
-      <nodeName>slave1</nodeName>
-      <timestamp0>1550604419813</timestamp0>
-    </com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet>
-    <com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet plugin="credentials@2.1.18">
-      <timestamp>1550605845524</timestamp>
+      <timestamp>1550607225429</timestamp>
       <nodeName>classSlave</nodeName>
-      <timestamp0>1550604419807</timestamp0>
+      <timestamp0>1550605845524</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet>
+    <com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet plugin="credentials@2.1.18">
+      <timestamp>1550607225487</timestamp>
+      <nodeName>slave2</nodeName>
+      <timestamp0>1550605845226</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet>
+    <com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet plugin="credentials@2.1.18">
+      <timestamp>1550607225562</timestamp>
+      <nodeName>slave1</nodeName>
+      <timestamp0>1550605845452</timestamp0>
     </com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet>
   </facets>
 </fingerprint>
