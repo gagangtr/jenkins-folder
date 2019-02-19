@@ -5,3 +5,129 @@ Building on master in workspace /var/lib/jenkins/workspace/jenkinsScriptCrontab
 /var/lib/jenkins/workspace/jenkinsScriptCrontab
 + sudo sh /home/ec2-user/scripts/jenkinsBackup.sh
 /var/lib/jenkins
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   fingerprints/fe/c5/fbc82900a7fde6890aa3b63e8bed.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/1/build.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/1/changelog.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/1/log
+#	new file:   jobs/jenkinsScriptCrontab/builds/2/build.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/2/changelog.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/2/log
+#	new file:   jobs/jenkinsScriptCrontab/builds/3/build.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/3/changelog.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/3/log
+#	new file:   jobs/jenkinsScriptCrontab/builds/4/build.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/4/changelog.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/4/log
+#	new file:   jobs/jenkinsScriptCrontab/builds/5/build.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/5/changelog.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/5/log
+#	new file:   jobs/jenkinsScriptCrontab/builds/6/changelog.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/6/log
+#	new file:   jobs/jenkinsScriptCrontab/builds/lastFailedBuild
+#	new file:   jobs/jenkinsScriptCrontab/builds/lastStableBuild
+#	new file:   jobs/jenkinsScriptCrontab/builds/lastSuccessfulBuild
+#	new file:   jobs/jenkinsScriptCrontab/builds/lastUnstableBuild
+#	new file:   jobs/jenkinsScriptCrontab/builds/lastUnsuccessfulBuild
+#	new file:   jobs/jenkinsScriptCrontab/builds/legacyIds
+#	new file:   jobs/jenkinsScriptCrontab/config.xml
+#	new file:   jobs/jenkinsScriptCrontab/lastStable
+#	new file:   jobs/jenkinsScriptCrontab/lastSuccessful
+#	new file:   jobs/jenkinsScriptCrontab/nextBuildNumber
+#	modified:   logs/slaves/classSlave/slave.log
+#	modified:   logs/slaves/classSlave/slave.log.1
+#	modified:   logs/slaves/classSlave/slave.log.10
+#	modified:   logs/slaves/classSlave/slave.log.2
+#	modified:   logs/slaves/classSlave/slave.log.3
+#	modified:   logs/slaves/classSlave/slave.log.4
+#	modified:   logs/slaves/classSlave/slave.log.5
+#	modified:   logs/slaves/classSlave/slave.log.6
+#	modified:   logs/slaves/classSlave/slave.log.7
+#	modified:   logs/slaves/classSlave/slave.log.8
+#	modified:   logs/slaves/classSlave/slave.log.9
+#	modified:   logs/slaves/slave1/slave.log
+#	modified:   logs/slaves/slave1/slave.log.1
+#	modified:   logs/slaves/slave1/slave.log.10
+#	modified:   logs/slaves/slave1/slave.log.2
+#	modified:   logs/slaves/slave1/slave.log.3
+#	modified:   logs/slaves/slave1/slave.log.4
+#	modified:   logs/slaves/slave1/slave.log.5
+#	modified:   logs/slaves/slave1/slave.log.6
+#	modified:   logs/slaves/slave1/slave.log.7
+#	modified:   logs/slaves/slave1/slave.log.8
+#	modified:   logs/slaves/slave1/slave.log.9
+#	modified:   logs/slaves/slave2/slave.log
+#	modified:   logs/slaves/slave2/slave.log.1
+#	modified:   logs/slaves/slave2/slave.log.10
+#	modified:   logs/slaves/slave2/slave.log.2
+#	modified:   logs/slaves/slave2/slave.log.3
+#	modified:   logs/slaves/slave2/slave.log.4
+#	modified:   logs/slaves/slave2/slave.log.5
+#	modified:   logs/slaves/slave2/slave.log.6
+#	modified:   logs/slaves/slave2/slave.log.7
+#	modified:   logs/slaves/slave2/slave.log.8
+#	modified:   logs/slaves/slave2/slave.log.9
+#	modified:   logs/slaves/slave3/slave.log
+#	modified:   logs/slaves/slave3/slave.log.1
+#	modified:   logs/slaves/slave3/slave.log.10
+#	modified:   logs/slaves/slave3/slave.log.2
+#	modified:   logs/slaves/slave3/slave.log.3
+#	modified:   logs/slaves/slave3/slave.log.4
+#	modified:   logs/slaves/slave3/slave.log.5
+#	modified:   logs/slaves/slave3/slave.log.6
+#	modified:   logs/slaves/slave3/slave.log.7
+#	modified:   logs/slaves/slave3/slave.log.8
+#	modified:   logs/slaves/slave3/slave.log.9
+#	modified:   queue.xml
+#
+[master 14dd385] 2019-02-19_21:01:52 updated
+ Committer: root <root@ip-172-31-41-181.us-east-2.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 73 files changed, 493 insertions(+), 213 deletions(-)
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/1/build.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/1/changelog.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/1/log
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/2/build.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/2/changelog.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/2/log
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/3/build.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/3/changelog.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/3/log
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/4/build.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/4/changelog.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/4/log
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/5/build.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/5/changelog.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/5/log
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/6/changelog.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/6/log
+ create mode 120000 jobs/jenkinsScriptCrontab/builds/lastFailedBuild
+ create mode 120000 jobs/jenkinsScriptCrontab/builds/lastStableBuild
+ create mode 120000 jobs/jenkinsScriptCrontab/builds/lastSuccessfulBuild
+ create mode 120000 jobs/jenkinsScriptCrontab/builds/lastUnstableBuild
+ create mode 120000 jobs/jenkinsScriptCrontab/builds/lastUnsuccessfulBuild
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/legacyIds
+ create mode 100644 jobs/jenkinsScriptCrontab/config.xml
+ create mode 120000 jobs/jenkinsScriptCrontab/lastStable
+ create mode 120000 jobs/jenkinsScriptCrontab/lastSuccessful
+ create mode 100644 jobs/jenkinsScriptCrontab/nextBuildNumber
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

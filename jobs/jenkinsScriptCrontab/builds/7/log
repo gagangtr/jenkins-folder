@@ -1,0 +1,7 @@
+Started by timer
+Building on master in workspace /var/lib/jenkins/workspace/jenkinsScriptCrontab
+[jenkinsScriptCrontab] $ /bin/sh -xe /tmp/jenkins779754888934181295.sh
++ pwd
+/var/lib/jenkins/workspace/jenkinsScriptCrontab
++ sudo sh /home/ec2-user/scripts/jenkinsBackup.sh
+/var/lib/jenkins
