@@ -3,3 +3,73 @@ Building on master in workspace /var/lib/jenkins/workspace/jenkinsScriptCrontab
 [jenkinsScriptCrontab] $ /bin/sh -xe /tmp/jenkins3349031672758722302.sh
 + sh jenkinsBackup.sh
 /var/lib/jenkins
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   jobs/jenkinsScriptCrontab/builds/10/build.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/10/changelog.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/10/log
+#	new file:   jobs/jenkinsScriptCrontab/builds/11/build.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/11/changelog.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/11/log
+#	new file:   jobs/jenkinsScriptCrontab/builds/12/build.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/12/changelog.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/12/log
+#	new file:   jobs/jenkinsScriptCrontab/builds/13/build.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/13/changelog.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/13/log
+#	new file:   jobs/jenkinsScriptCrontab/builds/14/build.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/14/changelog.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/14/log
+#	new file:   jobs/jenkinsScriptCrontab/builds/15/changelog.xml
+#	new file:   jobs/jenkinsScriptCrontab/builds/15/log
+#	new file:   jobs/jenkinsScriptCrontab/builds/9/build.xml
+#	modified:   jobs/jenkinsScriptCrontab/builds/9/log
+#	modified:   jobs/jenkinsScriptCrontab/builds/lastFailedBuild
+#	modified:   jobs/jenkinsScriptCrontab/builds/lastStableBuild
+#	modified:   jobs/jenkinsScriptCrontab/builds/lastSuccessfulBuild
+#	modified:   jobs/jenkinsScriptCrontab/builds/lastUnsuccessfulBuild
+#	modified:   jobs/jenkinsScriptCrontab/config.xml
+#	modified:   jobs/jenkinsScriptCrontab/nextBuildNumber
+#	modified:   queue.xml
+#
+[master 7385776] 2019-02-19_21:15:08 updated
+ Committer: root <root@ip-172-31-41-181.us-east-2.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 26 files changed, 262 insertions(+), 13 deletions(-)
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/10/build.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/10/changelog.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/10/log
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/11/build.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/11/changelog.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/11/log
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/12/build.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/12/changelog.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/12/log
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/13/build.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/13/changelog.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/13/log
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/14/build.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/14/changelog.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/14/log
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/15/changelog.xml
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/15/log
+ create mode 100644 jobs/jenkinsScriptCrontab/builds/9/build.xml
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
